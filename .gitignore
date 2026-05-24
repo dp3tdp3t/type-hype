@@ -11,10 +11,13 @@ dist/
 # Generated icons (rebuilt by scripts/generate_icon.py and the CI workflow)
 icon/
 
-# Local dev data — runtime caches and config now live in the user
-# data dir (see paths.py). The legacy in-repo data/ folder is only
-# used as a migration source on first run; don't track it.
-data/
+# Local dev runtime data — runtime caches and config now live in the
+# user data dir (see paths.py). The legacy in-repo data/ folder is
+# only used as a migration source on first run; don't track it.
+# Leading slash anchors to repo root so this does NOT match
+# engine/sources/data/ (which holds the bundled snippets/titles
+# that DO belong in source control).
+/data/
 
 # OS / editor
 .DS_Store
