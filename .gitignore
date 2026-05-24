@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# PyInstaller build output
+build/
+dist/
+
+# Generated icons (rebuilt by scripts/generate_icon.py and the CI workflow)
+icon/
+
+# Local dev data — runtime caches and config now live in the user
+# data dir (see paths.py). The legacy in-repo data/ folder is only
+# used as a migration source on first run; don't track it.
+data/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Virtual environments
+venv/
+.venv/
+env/

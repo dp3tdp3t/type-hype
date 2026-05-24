@@ -1,0 +1,4 @@
+# Build-time dependencies. The bundled app itself uses only stdlib.
+# Install with: pip install -r requirements-build.txt
+pyinstaller>=6.0
+Pillow>=10.0
